@@ -15,7 +15,7 @@ async function generateImage() {
 
   try {
     const response = await axios.post(
-      "https://api.geminigen.ai/uapi/v1/generate_image",
+      "https://api.snapgen.ai/uapi/v1/generate_image",
       formData,
       {
         headers: {
@@ -50,7 +50,7 @@ public class GenImage {
         bodyBuilder.addFormDataPart("model", "imagen-flash");
 
         Request request = new Request.Builder()
-                .url("https://api.geminigen.ai/uapi/v1/generate_image")
+                .url("https://api.snapgen.ai/uapi/v1/generate_image")
                 .addHeader("x-api-key", "your_api_key")
                 .addHeader("Accept", "application/json")
                 .post(bodyBuilder.build())
@@ -69,7 +69,7 @@ public class GenImage {
       code: `
 import requests
 
-url = "https://api.geminigen.ai/uapi/v1/generate_image"
+url = "https://api.snapgen.ai/uapi/v1/generate_image"
 headers = {
     "Accept": "application/json",
     "x-api-key": "your_api_key"
@@ -97,7 +97,7 @@ $data = [
 ];
 
 curl_setopt_array($curl, [
-  CURLOPT_URL => "https://api.geminigen.ai/uapi/v1/generate_image",
+  CURLOPT_URL => "https://api.snapgen.ai/uapi/v1/generate_image",
   CURLOPT_RETURNTRANSFER => true,
   CURLOPT_POST => true,
   CURLOPT_HTTPHEADER => [
@@ -137,7 +137,7 @@ class Program {
             form.Add(new StringContent("imagen-flash"), "model");
             // other params...
 
-            var response = await client.PostAsync("https://api.geminigen.ai/uapi/v1/generate_image", form);
+            var response = await client.PostAsync("https://api.snapgen.ai/uapi/v1/generate_image", form);
             string result = await response.Content.ReadAsStringAsync();
             Console.WriteLine(result);
         }
@@ -153,7 +153,7 @@ class Program {
       code: `
 const axios = require("axios");
 
-const url = "https://api.geminigen.ai/uapi/v1/video-gen/veo";
+const url = "https://api.snapgen.ai/uapi/v1/video-gen/veo";
 const headers = {
   "x-api-key": "your_api_key"
 };
@@ -183,7 +183,7 @@ import java.net.http.HttpResponse;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        String url = "https://api.geminigen.ai/uapi/v1/video-gen/veo";
+        String url = "https://api.snapgen.ai/uapi/v1/video-gen/veo";
         String json = """
         {
             "prompt": "A serene lake surrounded by mountains at sunset with gentle waves",
@@ -212,7 +212,7 @@ public class Main {
       code: `
 import requests
 
-url = "https://api.geminigen.ai/uapi/v1/video-gen/veo"
+url = "https://api.snapgen.ai/uapi/v1/video-gen/veo"
 headers = {
     "x-api-key": "<your api key>"
 }
@@ -231,7 +231,7 @@ print(response.json())
       label: "PHP",
       code: `
 &lt;?php
-$url = "https://api.geminigen.ai/uapi/v1/video-gen/veo";
+$url = "https://api.snapgen.ai/uapi/v1/video-gen/veo";
 
 $data = [
     "prompt" => "A serene lake surrounded by mountains at sunset with gentle waves",
@@ -269,7 +269,7 @@ using System.Threading.Tasks;
 
 class Program {
     static async Task Main() {
-        var url = "https://api.geminigen.ai/uapi/v1/video-gen/veo";
+        var url = "https://api.snapgen.ai/uapi/v1/video-gen/veo";
         var json = @"{
             ""prompt"": ""A serene lake surrounded by mountains at sunset with gentle waves"",
             ""model"": ""veo-3"",
@@ -531,7 +531,7 @@ public static class WebhookUtil {
       code: `
 const axios = require("axios");
 
-const url = "https://api.geminigen.ai/uapi/v1/text-to-speech";
+const url = "https://api.snapgen.ai/uapi/v1/text-to-speech";
 const headers = {
   "Content-Type": "application/json",
   "x-api-key": "your_api_key"
@@ -564,7 +564,7 @@ import java.net.http.HttpResponse;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        String url = "https://api.geminigen.ai/uapi/v1/text-to-speech";
+        String url = "https://api.snapgen.ai/uapi/v1/text-to-speech";
         String json = """
         {
             "model": "tts-1",
@@ -595,7 +595,7 @@ public class Main {
       code: `
 import requests
 
-url = "https://api.geminigen.ai/uapi/v1/text-to-speech"
+url = "https://api.snapgen.ai/uapi/v1/text-to-speech"
 headers = {
     "Content-Type": "application/json",
     "x-api-key": "<your api key>"
@@ -616,7 +616,7 @@ print(response.json())
       label: "PHP",
       code: `
 &lt;?php
-$url = "https://api.geminigen.ai/uapi/v1/text-to-speech";
+$url = "https://api.snapgen.ai/uapi/v1/text-to-speech";
 
 $data = [
     "model" => "tts-1",
@@ -657,7 +657,7 @@ using System.Threading.Tasks;
 
 class Program {
     static async Task Main() {
-        var url = "https://api.geminigen.ai/uapi/v1/text-to-speech";
+        var url = "https://api.snapgen.ai/uapi/v1/text-to-speech";
         var json = @"{
             ""model"": ""tts-1"",
             ""voice_id"": ""OA001"",
@@ -687,7 +687,7 @@ const axios = require("axios");
 const FormData = require("form-data");
 const fs = require("fs");
 
-const url = "https://api.geminigen.ai/uapi/v1/document-to-speech";
+const url = "https://api.snapgen.ai/uapi/v1/document-to-speech";
 
 const form = new FormData();
 form.append("model", "tts-1");
@@ -726,7 +726,7 @@ import java.io.File;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        String url = "https://api.geminigen.ai/uapi/v1/document-to-speech";
+        String url = "https://api.snapgen.ai/uapi/v1/document-to-speech";
 
         CloseableHttpClient client = HttpClients.createDefault();
         HttpPost post = new HttpPost(url);
@@ -758,7 +758,7 @@ public class Main {
       code: `
 import requests
 
-url = "https://api.geminigen.ai/uapi/v1/document-to-speech"
+url = "https://api.snapgen.ai/uapi/v1/document-to-speech"
 headers = {
     "x-api-key": "<your api key>",
     "Content-Type": "multipart/form-data"
@@ -780,7 +780,7 @@ print(response.json())
       label: "PHP",
       code: `
 &lt;?php
-$url = "https://api.geminigen.ai/uapi/v1/document-to-speech";
+$url = "https://api.snapgen.ai/uapi/v1/document-to-speech";
 
 $data = [
     "model" => "tts-1",
@@ -818,7 +818,7 @@ using System.Threading.Tasks;
 
 class Program {
     static async Task Main() {
-        var url = "https://api.geminigen.ai/uapi/v1/document-to-speech";
+        var url = "https://api.snapgen.ai/uapi/v1/document-to-speech";
 
         using var client = new HttpClient();
         client.DefaultRequestHeaders.Add("x-api-key", "your_api_key");
@@ -844,7 +844,7 @@ class Program {
       lang: "javascript",
       label: "Javascript",
       code: `
-const url = "https://api.geminigen.ai/uapi/v1/tts-multi-speaker";
+const url = "https://api.snapgen.ai/uapi/v1/tts-multi-speaker";
 const headers = {
   "Content-Type": "application/json",
   "x-api-key": "<your api key>"
@@ -887,7 +887,7 @@ import java.net.http.HttpResponse;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        String url = "https://api.geminigen.ai/uapi/v1/tts-multi-speaker";
+        String url = "https://api.snapgen.ai/uapi/v1/tts-multi-speaker";
 
         // Build JSON bằng code (StringBuilder)
         StringBuilder jsonBuilder = new StringBuilder();
@@ -930,7 +930,7 @@ public class Main {
       code: `
 import requests
 
-url = "https://api.geminigen.ai/uapi/v1/tts-multi-speaker"
+url = "https://api.snapgen.ai/uapi/v1/tts-multi-speaker"
 headers = {
     "Content-Type": "application/json",
     "x-api-key": "<your api key>"
@@ -964,7 +964,7 @@ print(response.json())
       label: "PHP",
       code: `
 &lt;?php
-$url = "https://api.geminigen.ai/uapi/v1/tts-multi-speaker";
+$url = "https://api.snapgen.ai/uapi/v1/tts-multi-speaker";
 
 $data = [
     "voices" => ["OA001", "OA002"],
@@ -1012,7 +1012,7 @@ using System.Threading.Tasks;
 
 class Program {
     static async Task Main(string[] args) {
-        var url = "https://api.geminigen.ai/uapi/v1/tts-multi-speaker";
+        var url = "https://api.snapgen.ai/uapi/v1/tts-multi-speaker";
         var client = new HttpClient();
 
         client.DefaultRequestHeaders.Add("x-api-key", "<your api key>");
@@ -1070,7 +1070,7 @@ async function generateText() {
 
   try {
     const response = await axios.post(
-      "https://api-dev.geminigen.ai/uapi/v1/text/generate",
+      "https://api-dev.snapgen.ai/uapi/v1/text/generate",
       formData,
       {
         headers: {
@@ -1106,7 +1106,7 @@ public class GenerateText {
         var client = HttpClient.newHttpClient();
 
         var request = HttpRequest.newBuilder()
-            .uri(URI.create("https://api-dev.geminigen.ai/uapi/v1/text/generate"))
+            .uri(URI.create("https://api-dev.snapgen.ai/uapi/v1/text/generate"))
             .header("Accept", "application/json")
             .header("x-api-key", "your_api_key")
             .POST(ofMimeMultipartData())
@@ -1147,7 +1147,7 @@ public class GenerateText {
       code: `
 import requests
 
-url = "https://api-dev.geminigen.ai/uapi/v1/text/generate"
+url = "https://api-dev.snapgen.ai/uapi/v1/text/generate"
 headers = {
     "Accept": "application/json",
     "x-api-key": "your_api_key"
@@ -1199,7 +1199,7 @@ $data = [
 ];
 
 curl_setopt_array($ch, [
-    CURLOPT_URL => "https://api-dev.geminigen.ai/uapi/v1/text/generate",
+    CURLOPT_URL => "https://api-dev.snapgen.ai/uapi/v1/text/generate",
     CURLOPT_RETURNTRANSFER => true,
     CURLOPT_POST => true,
     CURLOPT_POSTFIELDS => $data,
@@ -1245,7 +1245,7 @@ class Program {
         form.Add(new StreamContent(File.OpenRead("files/sample.pdf")), "document_files", "sample.pdf");
         form.Add(new StreamContent(File.OpenRead("files/sample.mp4")), "videos", "sample.mp4");
 
-        var request = new HttpRequestMessage(HttpMethod.Post, "https://api-dev.geminigen.ai/uapi/v1/text/generate") {
+        var request = new HttpRequestMessage(HttpMethod.Post, "https://api-dev.snapgen.ai/uapi/v1/text/generate") {
             Headers = { { "Accept", "application/json" }, { "x-api-key", "your_api_key" } },
             Content = form
         };

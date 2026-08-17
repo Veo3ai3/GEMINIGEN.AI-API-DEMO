@@ -1,4 +1,4 @@
-const BACKEND_URL = "https://api.geminigen.ai";
+const BACKEND_URL = "https://api.snapgen.ai";
 const DEFAULT_GEN_VIDEO_MODEL = "veo-2";
 const RESPONSE_MESSAGE_MAPPING = {
   500: "An unknown error occurred. Please try again.",

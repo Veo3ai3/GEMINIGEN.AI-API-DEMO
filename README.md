@@ -1,12 +1,12 @@
-# GenminiGen AI
-<img src="assets/images/logo.png" alt="GenminiGen AI logo" width="824" />
+# SnapGen AI
+<img src="assets/images/logo.png" alt="SnapGen AI logo" width="824" />
 
-Geminigen.ai offers AI-generated images and videos from text at a more affordable price compared to other applications on the market. In addition to image and video generation from text, we also provide text-to-speech services and text-based conversation generation.
+Snapgen.ai offers AI-generated images and videos from text at a more affordable price compared to other applications on the market. In addition to image and video generation from text, we also provide text-to-speech services and text-based conversation generation.
 
-🌐 Our Website: https://geminigen.ai/
+🌐 Our Website: https://snapgen.ai/
 
 
-## 🚀 Why GeminiGen AI?
+## 🚀 Why SnapGen AI?
 - 🤖 Advanced AI: Use cutting-edge AI technology to generate high-quality content with amazing accuracy.
 
 - ⚡ Fast Generation: Transform your ideas into content in just seconds. No long waiting times.
@@ -22,10 +22,10 @@ Geminigen.ai offers AI-generated images and videos from text at a more affordabl
 
 ## 📚 Documentation
 We provide APIs to generate images/videos. Please follow the instructions below.
-- To try out the photo and video generate APIs visit: <a href="https://ainnate-geminigen.github.io/GEMINIGEN.AI-API-DEMO/" target="_blank">Getting started</a>
-- Use APIs with the programming languages ​​you use. See how to <a href="https://ainnate-geminigen.github.io/GEMINIGEN.AI-API-DEMO/demo.html" target="_blank">integrate API with your language</a>.
+- To try out the photo and video generate APIs visit: <a href="https://ainnate-geminigen.github.io/SNAPGEN.AI-API-DEMO/" target="_blank">Getting started</a>
+- Use APIs with the programming languages ​​you use. See how to <a href="https://ainnate-geminigen.github.io/SNAPGEN.AI-API-DEMO/demo.html" target="_blank">integrate API with your language</a>.
 
 
 ## 👋 Contributing
-GeminiGen AI always looking for new contributions. From documentation, contributing to our  reporting a bug; any contribution is valued and welcome. Are you interested in contributing to GeminiGen AI? Read our guide and get started with GeminiGen AI now!
+SnapGen AI always looking for new contributions. From documentation, contributing to our  reporting a bug; any contribution is valued and welcome. Are you interested in contributing to SnapGen AI? Read our guide and get started with SnapGen AI now!
 
